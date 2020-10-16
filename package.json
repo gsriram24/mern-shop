@@ -1,0 +1,31 @@
+{
+	"name": "mern-ecommerce",
+	"version": "1.0.0",
+	"description": "eCommerce with mern",
+	"main": "server.js",
+	"type": "module",
+	"scripts": {
+		"start": "node backend/server",
+		"server": "nodemon backend/server",
+		"client": "yarn --cwd frontend start",
+		"dev": "concurrently \"yarn run server\"  \"yarn run client\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sgcuber24/mern-shop.git"
+	},
+	"author": "G Sriram",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sgcuber24/mern-shop/issues"
+	},
+	"homepage": "https://github.com/sgcuber24/mern-shop#readme",
+	"dependencies": {
+		"dotenv": "^8.2.0",
+		"express": "^4.17.1"
+	},
+	"devDependencies": {
+		"concurrently": "^5.3.0",
+		"nodemon": "^2.0.5"
+	}
+}
