@@ -10,7 +10,6 @@ import { USER_ADMIN_UPDATE_RESET } from '../constants/userConstants';
 const UserEditScreen = ({ match, history }) => {
 	const userId = match.params.id;
 	const [email, setEmail] = useState('');
-	const [message, setMessage] = useState(null);
 	const [name, setName] = useState('');
 	const [isAdmin, setIsAdmin] = useState(false);
 	const dispatch = useDispatch();
